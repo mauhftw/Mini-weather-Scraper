@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="keywords" content="woeid, woeid lookup, find woeid, woeid zip code, woeid location, yahoo woeid" />
+        <meta name="description" content="An app to lookup Yahoo! WOEIDs for any place on earth. You can search by city, 
+              address or zip code. It's also good for looking up weather, time and geolocation data." />
+        <meta charset=utf-8>
+
+        <title>
+            Yahoo WOEID Lookup            &nbsp;&nbsp;|&nbsp;&nbsp;Find Yahoo WOEID Identifiers        </title>
+
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/ico" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://woeid.rosselliot.co.nz/application/views/css/style.css" media="all" type="text/css" />
+
+        <!--get jQuery core from Google-->	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+      <!--  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>-->  
+
+
+        
+    </head>
+
+    <body>
+
+        <div id="fb-root"></div>
+
+        <noscript>
+        <div id="noscript-warning">WOEID works best with JavaScript enabled</div>
+        </noscript>
+
+        <div id="page_wrap">
+
+            <div id="header">
+
+                <h1><a href="http://woeid.rosselliot.co.nz/">WOEID Lookup</a></h1>			
+
+                <div class="hire_me">
+                    <h2>Hire Me!</h2>
+                    <p>I'm Ross Elliot. I developed this site.</p>
+            <!--			     	<p>I'm Ross Elliot. I developed this site. Hire me for Wordpress, Codeigniter, E-Commerce and general website design and development.
+                    I offer great rates and great advice.</p>-->
+
+<!--     	<p><a href="http://rosselliot.co.nz/contact">Contact Ross</a></p>-->
+                    <p><a href="mailto:ross@rosselliot.co.nz">Contact Ross</a></p>
+                </div>
+
+            </div><!--end header-->
+
+            <div id="wrapper">
+
+
+
+                <!--now load content -->
+<div class="info">
+<p>WOEID Lookup makes it easy to find <a target="_blank" href="http://developer.yahoo.com/geo/geoplanet/guide/concepts.html">Yahoo! WOEIDs</a>
+	 for any location on Earth. You can search by city, address or zip code. It's also good for looking up weather, time and geolocation data. 
+	 You might also discover that there are twenty-eight places named Moscow and that twenty-six of them are in the USA. Weird, but interesting.</p>
+</div>
+
+<div id="content">
+
+<h2 class="tab">Search Place</h2>
+
+<div class="social_media_buttons">
+	<!--<div class="g-plusone" data-annotation="none" data-href="http://woeid.rosselliot.co.nz/"></div>-->
+	<!--<div class="fb-like" data-href="http://woeid.rosselliot.co.nz" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></div>-->
+</div>
+
+<!--<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://woeid.rosselliot.co.nz/" data-size="large" data-hashtags="woeid">Tweet</a>-->
+
+
+<div id='lookup_form'>
+
+<form action="http://woeid.rosselliot.co.nz/lookup" method="post" accept-charset="utf-8">
+<input type="hidden" name="submitted" value="1" />
+<div class="input_group"><label for="place">Town, state, country, address, zipcode or landmark</label><input type="text" name="place" value="Mendoza" id="place"  /></div>
+  
+  <input type="submit" name="submit" value="Lookup"  /></form>
+</div>
+
+
+<div class="ad">
+  <a class="do_link" target="_blank" href="http://www.shopify.com/?ref=woeidlookup"><img src="http://woeid.rosselliot.co.nz/application/views/images/shopify_670_green.jpg" /></a>
+</div>
+
+
+<!--
+		 <p>Need location data, weather, etc. programmed for your website? <a href="mailto:ross@rosselliot.co.nz">Contact Ross</a></p>
+-->
+
+<h2 class="tab">Results</h2>
+<div id="lookup_results">
+
+  <h4>&ldquo;Mendoza&rdquo;&nbsp;(14)</h4>
+  <table id="woeid_results_table"><thead><tr><th>District-County</th><th>Province-State</th><th>Country</th><th class="woeid">WOEID</th></tr></thead><tr class='woeid_row' data-center_long="-68.852798" data-center_lat="-32.877811" data-city="Mendoza" data-district_county="Mendoza" data-province_state="Mendoza" data-country="Argentina" data-woeid="332471"><td>Mendoza</td><td>Mendoza</td><td>Argentina</td><td class='woeid'>332471</td></tr><tr class='woeid_row' data-center_long="-82.383301" data-center_lat="23.100000" data-city="Mendoza" data-district_county="" data-province_state="Ciudad de la Habana" data-country="Cuba" data-woeid="65467"><td></td><td>Ciudad de la Habana</td><td>Cuba</td><td class='woeid'>65467</td></tr><tr class='woeid_row' data-center_long="-2.777240" data-center_lat="42.859772" data-city="Mendoza" data-district_county="Araba" data-province_state="Basque Country" data-country="Spain" data-woeid="767065"><td>Araba</td><td>Basque Country</td><td>Spain</td><td class='woeid'>767065</td></tr><tr class='woeid_row' data-center_long="-121.660797" data-center_lat="39.234402" data-city="Mendoza" data-district_county="Sutter" data-province_state="California" data-country="United States" data-woeid="2449417"><td>Sutter</td><td>California</td><td>United States</td><td class='woeid'>2449417</td></tr><tr class='woeid_row' data-center_long="-77.452019" data-center_lat="-6.297640" data-city="Mendoza" data-district_county="Rodriguez De Mendoza" data-province_state="Amazonas" data-country="Peru" data-woeid="418553"><td>Rodriguez De Mendoza</td><td>Amazonas</td><td>Peru</td><td class='woeid'>418553</td></tr><tr class='woeid_row' data-center_long="-70.659630" data-center_lat="9.240790" data-city="Mendoza" data-district_county="Valera" data-province_state="Trujillo" data-country="Venezuela" data-woeid="395337"><td>Valera</td><td>Trujillo</td><td>Venezuela</td><td class='woeid'>395337</td></tr><tr class='woeid_row' data-center_long="-106.266701" data-center_lat="28.049999" data-city="Los Mendoza" data-district_county="Satevo" data-province_state="Chihuahua" data-country="Mexico" data-woeid="132115"><td>Satevo</td><td>Chihuahua</td><td>Mexico</td><td class='woeid'>132115</td></tr><tr class='woeid_row' data-center_long="-97.688248" data-center_lat="30.008530" data-city="Mendoza" data-district_county="Caldwell" data-province_state="Texas" data-country="United States" data-woeid="2449416"><td>Caldwell</td><td>Texas</td><td>United States</td><td class='woeid'>2449416</td></tr><tr class='woeid_row' data-center_long="-56.214588" data-center_lat="-34.297821" data-city="Mendoza" data-district_county="" data-province_state="Florida" data-country="Uruguay" data-woeid="468103"><td></td><td>Florida</td><td>Uruguay</td><td class='woeid'>468103</td></tr><tr class='woeid_row' data-center_long="-84.094818" data-center_lat="22.171261" data-city="Isabel Rubio" data-district_county="" data-province_state="Pinar del Rio" data-country="Cuba" data-woeid="63048"><td></td><td>Pinar del Rio</td><td>Cuba</td><td class='woeid'>63048</td></tr><tr class='woeid_row' data-center_long="-79.849998" data-center_lat="9.013150" data-city="Mendoza" data-district_county="La Chorrera District" data-province_state="Panama" data-country="Panama" data-woeid="159103"><td>La Chorrera District</td><td>Panama</td><td>Panama</td><td class='woeid'>159103</td></tr><tr class='woeid_row' data-center_long="-100.766701" data-center_lat="20.600000" data-city="Mendoza" data-district_county="Celaya" data-province_state="Guanajuato" data-country="Mexico" data-woeid="133305"><td>Celaya</td><td>Guanajuato</td><td>Mexico</td><td class='woeid'>133305</td></tr><tr class='woeid_row' data-center_long="-82.356941" data-center_lat="27.714960" data-city="Sun City Center" data-district_county="Hillsborough" data-province_state="Florida" data-country="United States" data-woeid="2501881"><td>Hillsborough</td><td>Florida</td><td>United States</td><td class='woeid'>2501881</td></tr><tr class='woeid_row' data-center_long="119.393646" data-center_lat="10.419220" data-city="Mendoza" data-district_county="Palawan" data-province_state="Mimaropa" data-country="Philippines" data-woeid="91425093"><td>Palawan</td><td>Mimaropa</td><td>Philippines</td><td class='woeid'>91425093</td></tr></table>
+</div>
+</div><!--#content-->
+
+<div id="sidebar">
+  <h2 class="tab">Place Info</h2>
+  <div class="place_info">
+  
+  </div>
+</div>
+
+</div><!--end wrapper-->
+
+<div id="footer">
+
+<p class="footer_info">
+Designed &amp; Developed by Ross Elliot using <a target="_blank" href="http://codeigniter.com/">Codeigniter</a> and webservices from <a target="_blank" href="http://developer.yahoo.com/geo/geoplanet/guide/api-reference.html">Yahoo!</a> and <a target="_blank" href="http://www.geonames.org/">Geonames</a>
+</p>
+
+<pre>
+</pre>  
+
+</div><!--end footer-->
+
+
+</div><!--end page_wrap-->
+
+
+	    <script src="http://woeid.rosselliot.co.nz/application/views/scripts/common.js" type="text/javascript"></script>  	
+      <script src="http://woeid.rosselliot.co.nz/application/views/scripts/google_analytics.js" type="text/javascript"></script>  	
+      <script src="http://woeid.rosselliot.co.nz/application/views/scripts/place_info.js" type="text/javascript"></script>  	
+      <script src="http://woeid.rosselliot.co.nz/application/views/scripts/jquery.jscroll.min.js" type="text/javascript"></script>  	
+      <script src="http://woeid.rosselliot.co.nz/application/views/scripts/google_plusone_button.js" type="text/javascript"></script>  	
+      <script src="http://woeid.rosselliot.co.nz/application/views/scripts/facebook_like_button.js" type="text/javascript"></script>  	
+  
+</body>
+
+</html>
