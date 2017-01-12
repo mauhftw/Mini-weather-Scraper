@@ -22,13 +22,32 @@ This program will open the current queue and then it will insert data to the Dat
 ### Server
 This project contains a native C web-server created to request weather resoruces. Also there's a built in log file which shows ip's and resource's request.
 
-## Usage
+## Setup
 
 1. Use makefile for compiling every process in each directory (e.g make weather, make process, make server).
 2. Import the sql dump ("weather.sql").
 3. Run ./weather -c YourCountry -s YourState (Inside "Scraper" directory).
 4. Run ./queuetosql (Inside "Process" directory).
 5. Run ./server -c port.conf (Inside "Server" directory).
-6.
-7. Have fun!
+
+## Usage
+Open your browser or web client.
+
+### Retrieve temperature
+http://localhost/Country/State/Temperature 
+
+### Retrive humidity
+http://localhost/Country/State/Humidity
+
+## Examples
+
+### Retrieve Mendoza's temperature
+- `http://localhost/Argentina/Mendoza/Temperature`
+
+### Retrieve Mendoza's humidity
+- `http://localhost/Argentina/Mendoza/Humidity`
+
+
+
+
 
