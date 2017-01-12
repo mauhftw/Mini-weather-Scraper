@@ -6,9 +6,9 @@ state. The current application was implemented in C.
 
 ## Requirements
 
-`libcurl dev library`
-`mysql dev library`
-`mysql server`
+- `libcurl dev library`
+- `mysql dev library`
+- `mysql server`
 
 ## Architecture
 
