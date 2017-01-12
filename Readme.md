@@ -1,6 +1,5 @@
 # Mini weather web scrapper
 
-
 This is a tiny web scrapper which parse weather data (temperature and humidity) from a certain
 state. The current application was implemented in C.
 
@@ -12,16 +11,16 @@ state. The current application was implemented in C.
 
 ## Architecture
 
-The project is basically separated in 3 process:
+The project is basically separated in 3 processes:
 
 ### Scraper
-This process will search data on internet. Once data is analized, it will be stored in a Queue. You can only run this process once an hour (for each state). This is frequency the program will update data from internet.
+This process will crawl data from yahooweather page. Once data is analized, it will be stored in a Queue. You can only run this process once an hour for each state (polite crawling)
 
 ### Process
-This program will open the current queue and then it will insert data to the MySQL DB.
+This program will open the current queue and then it will insert data to the Database.
 
 ### Server
-This is a web-server created for displaying the weather data stored. Also you have a log file which shows who connected and what resource was ask for.
+This project contains a native C web-server created to request weather resoruces. Also there's a built in log file which shows ip's and resource's request.
 
 ## Usage
 
@@ -30,5 +29,6 @@ This is a web-server created for displaying the weather data stored. Also you ha
 3. Run ./weather -c YourCountry -s YourState (Inside "Scraper" directory).
 4. Run ./queuetosql (Inside "Process" directory).
 5. Run ./server -c port.conf (Inside "Server" directory).
-6. Have fun!
+6.
+7. Have fun!
 
